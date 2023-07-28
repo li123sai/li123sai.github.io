@@ -12,20 +12,20 @@ link:
   theme: color # 链接样式，color: 彩色图标  white: 黑白图标
   items:
     rss: /atom.xml
-    github: https://github.com/yelog
-    facebook: https://www.facebook.com/faker.tops
+    github: https://github.com/li123sai
+    facebook: 
     twitter:
     linkedin:
-    instagram: https://www.facebook.com/faker.tops
-    reddit: https://www.reddit.com/user/yelog/
-    weibo: http://weibo.com/u/2307534817
-    jianshu: https://www.jianshu.com/u/ff56736de7cf
-    zhihu: https://www.zhihu.com/people/jaytp/activities
+    instagram: 
+    reddit: https://www.reddit.com/user/leedongni
+    weibo: 
+    jianshu: https://www.jianshu.com/u/9e7fedc0853e
+    zhihu: https://www.zhihu.com/people/li-mo-yu-95-6
     csdn:
-    oschina: https://my.oschina.net/yelog
+    oschina: https://my.oschina.net/u/4017164
     juejin:
-    email: jaytp@qq.com
-    qq: 872336115
+    email: leesaigg@gmail.com
+    qq: 1003805540
     kugou: https://www.kugou.com/
     neteasemusic: https://music.163.com/#/user/home?id=88151013
 
@@ -76,17 +76,17 @@ menu:
       type: 1  # 跳转类型 1：站内异步跳转
     叶落阁:
       on: false
-      url: http://yelog.org/
+      url: https://leesai.online/
       type: 2  # 跳转类型 2：当前页面跳转
     github:
       on: false
-      url: https://github.com/yelog
+      url: https://github.com/li123sai
       type: 3  # 跳转类型 3：打开新的tab页
 
 # 文末声明
-article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com
+article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1003805540@qq.com
 
-bottom_text: ©2016-2020 Yelog
+bottom_text: ©2016-2020 leesai
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
@@ -224,7 +224,7 @@ mermaid:
 
 # 友情链接
 friends:
-  叶落阁: http://yelog.org/
+  叶落阁: https://leesai.online/
 
 ##########评论设置#############
 comment:
@@ -262,8 +262,8 @@ gitalk:
 
 
 gitment:
-  owner: yelog
-  repo: yelog.github.io
+  owner: li123sai
+  repo: li123sai.github.io
   client_id:
   client_secret:
   # gitment : 通过github issue实现的评论系统
