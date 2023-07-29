@@ -74,7 +74,7 @@ menu:
       on: false
       url: /photo
       type: 1  # 跳转类型 1：站内异步跳转
-    叶落阁:
+    光明阁:
       on: false
       url: https://leesai.online/
       type: 2  # 跳转类型 2：当前页面跳转
@@ -113,7 +113,7 @@ searchAll: false
 copyright: false
 # Copyright info. of post | 文末版权信息
 
-word_count: false
+word_count: true
 # true 开启字数统计
 # 开启此功能需要安装插件 ：在 hexo根目录 执行npm i hexo-wordcount --save
 
@@ -224,7 +224,7 @@ mermaid:
 
 # 友情链接
 friends:
-  叶落阁: https://leesai.online/
+  光明阁: https://leesai.online/
 
 ##########评论设置#############
 comment:
