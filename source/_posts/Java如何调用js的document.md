@@ -113,6 +113,17 @@ Exception in thread "main" javax.script.ScriptException: ReferenceError: "docume
      res.send(result);
    });
    
+   // 使用 app.use() 方法将 Express 中间件设置为解析请求体的 JSON 数据
+   app.use(express.json());
+   // 创建一个 POST 路由，通过调用 app.post() 方法监听 POST 请求并处理请求数据。你可以在处理函数中获取通过请求体传递的数据。
+   app.post('/examplepost', (req, res) => {
+     const data = req.body; // 获取请求体数据
+       
+     // 执行方法并返回响应
+     const result = yourMethod(data);
+     res.send(result);
+   });
+   
    // 在上述代码中，yourMethod() 是你自己定义的方法，根据传递的参数执行相应的逻辑，并返回结果。
    // 此时可以将需要待用的js代码全部复制到这里
    ```
