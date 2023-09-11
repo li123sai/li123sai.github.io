@@ -77,7 +77,7 @@ Kettle变量对应着四个不同的作用域范围"s"ystem, "r"oot, "g"randpare
 
 ------
 
-![Valid in the root iobl Machine](https://raw.githubusercontent.com/li123sai/myPictures/main/img/variable4.png)
+![Valid in the parent job](https://raw.githubusercontent.com/li123sai/myPictures/main/img/variable4.png)
 
 
 
@@ -93,6 +93,6 @@ Kettle变量对应着四个不同的作用域范围"s"ystem, "r"oot, "g"randpare
 
 
 
-四、JS脚本设置变量
+## 四、JS脚本设置变量
 
 ![Js脚本设置变量需要设置作用域](https://raw.githubusercontent.com/li123sai/myPictures/main/img/variable1.png)
