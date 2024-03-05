@@ -1,0 +1,3 @@
+[submodule "themes/hexo-theme-3-hexo"]
+	path = themes/hexo-theme-3-hexo
+	url = https://github.com/li123sai/hexo-theme-3-hexo.git
