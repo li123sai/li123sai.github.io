@@ -52,7 +52,7 @@ git merge upstream/master
 git push origin master
 ```
 
-![fork操作图示](https://raw.githubusercontent.com/li123sai/myPictures/main/img/submodule1.png)
+![fork操作图示](https://raw.githubusercontent.com/li123sai/myPictures/main/img/submodule2.png)
 
 ### 将fork的代码作为子项目
 
