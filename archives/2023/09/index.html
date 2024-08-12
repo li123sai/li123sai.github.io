@@ -6,17 +6,21 @@
   <meta name="keywords" content="">
   <meta name="description" content="Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="个人简介李赛，目前从事Java及相关工作。 联系方式 QQ : 1003805540 邮箱 : &amp;#49;&amp;#48;&amp;#x30;&amp;#x33;&amp;#56;&amp;#48;&amp;#53;&amp;#53;&amp;#x34;&amp;#x30;&amp;#64;&amp;#x71;&amp;#x71;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于&amp;留言板">
-<meta property="og:url" content="http://example.com/about/index.html">
+<meta name="description" content="一、背景使用hexo时可以选择很多主题，之前都是将主题复制到theme文件夹中直接使用，一次查看自己博客时发现一个主题的bug，去主题仓库发现大佬已经修改了，于是进行主题升级，这时就麻烦了。  主题基本都是一个独立的项目，将主题直接复制到项目中是没有原本的版本控制功能。 使用的主题如果自己个性化处理了，升级时需要将自己的修改在重复搞一遍。  二、Git submodules的作用Git submo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo使用git submodule管理主题">
+<meta property="og:url" content="http://example.com/2024/03/10/Hexo%E4%BD%BF%E7%94%A8git-submodule%E7%AE%A1%E7%90%86%E4%B8%BB%E9%A2%98/index.html">
 <meta property="og:site_name" content="Lee">
-<meta property="og:description" content="个人简介李赛，目前从事Java及相关工作。 联系方式 QQ : 1003805540 邮箱 : &amp;#49;&amp;#48;&amp;#x30;&amp;#x33;&amp;#56;&amp;#48;&amp;#53;&amp;#53;&amp;#x34;&amp;#x30;&amp;#64;&amp;#x71;&amp;#x71;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#109;">
+<meta property="og:description" content="一、背景使用hexo时可以选择很多主题，之前都是将主题复制到theme文件夹中直接使用，一次查看自己博客时发现一个主题的bug，去主题仓库发现大佬已经修改了，于是进行主题升级，这时就麻烦了。  主题基本都是一个独立的项目，将主题直接复制到项目中是没有原本的版本控制功能。 使用的主题如果自己个性化处理了，升级时需要将自己的修改在重复搞一遍。  二、Git submodules的作用Git submo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-31T09:54:10.000Z">
-<meta property="article:modified_time" content="2023-11-14T13:06:08.602Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/li123sai/myPictures/main/img/submodule2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/li123sai/myPictures/main/img/submodule1.png">
+<meta property="article:published_time" content="2024-03-10T14:02:43.000Z">
+<meta property="article:modified_time" content="2024-03-10T14:43:39.307Z">
 <meta property="article:author" content="Mr Lee">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/li123sai/myPictures/main/img/submodule2.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -213,7 +217,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(13)</small>
+                <small>(14)</small>
             
         </div>
     </li>
@@ -255,7 +259,7 @@
         <div data-rel="工具">
             <i class="fold iconfont icon-right"></i>
             工具
-            <small>(6)</small>
+            <small>(7)</small>
         </div>
         
             <ul class="sub hide">
@@ -287,7 +291,7 @@
         <div data-rel="工具&lt;---&gt;Mac">
             
             Mac
-            <small>(1)</small>
+            <small>(2)</small>
         </div>
         
     </li>
@@ -453,8 +457,8 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="13">
-<input type="hidden" id="yelog_site_word_count" value="10.1k">
+<input type="hidden" id="yelog_site_posts_number" value="14">
+<input type="hidden" id="yelog_site_word_count" value="10.4k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -539,6 +543,10 @@
                 <i class="iconfont icon-tag"></i><a>Node.js</a>
             </li>
         
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OrbStack</a>
+            </li>
+        
     </div>
 
 </div>
@@ -553,6 +561,15 @@
            data-author="" >
             <span class="post-title" title="读书列表">读书列表</span>
             <span class="post-date" title="2023-07-28 11:21:23">2023/07/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 工具 Mac "
+           href="/2024/07/24/Mac%E4%B8%8A%E8%BF%90%E8%A1%8CDocker%E5%92%8CLinux%E7%9A%84%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%B7%A5%E5%85%B7/"
+           data-tag="OrbStack"
+           data-author="" >
+            <span class="post-title" title="Mac上运行Docker和Linux的轻量级工具">Mac上运行Docker和Linux的轻量级工具</span>
+            <span class="post-date" title="2024-07-24 23:01:05">2024/07/24</span>
         </a>
         
         
